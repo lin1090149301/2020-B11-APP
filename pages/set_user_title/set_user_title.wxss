@@ -1,0 +1,7 @@
+/* pages/set_user_title/set_user_title.wxss */
+.page {
+  height: 100%;
+}
+.weui-label {
+  width: 4.1em;
+}

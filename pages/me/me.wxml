@@ -1,0 +1,77 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell weui-cell_active" bindtap='set_user_title'>
+                <view class="weui-cell__hd" style="position: relative; margin-right: 10px;">
+                    <open-data type="userAvatarUrl" style="width: 50px; display: block;"></open-data>
+                </view>
+                <view class="weui-cell__bd">
+                    <view>
+                        <open-data type="userNickName"></open-data>
+                    </view>
+                    <view style="font-size: 13px; color: #888;">{{user_title1}}</view>
+                    <view style="font-size: 13px; color: #888;">{{user_title2}}</view>
+                    <view style="font-size: 13px; color: #888;">{{user_title3}}</view>
+                    <view style="font-size: 13px; color: #888;">{{user_title4}}</view>
+                    <view style="font-size: 13px; color: #888;">{{user_title5}}</view>
+                    <view style="font-size: 13px; color: #888;">{{user_title6}}</view>
+                    <view style="font-size: 13px; color: #888;">点击修改</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_active weui-cell_access" bindtap="toMessage">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">申请消息</text>
+                    <view wx:if="{{message_number>0}}" style="display:inline;">
+                        <text class="weui-badge" style="margin-left: 5px;">{{message_number}}</text>
+                    </view>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+            <view class="weui-cell weui-cell_active weui-cell_access" bindtap="to_other_Message">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">其他消息</text>
+                    <view class="weui-badge" wx:if="{{other_message_number>0}}" style="margin-left: 5px;display:inline;">
+                        <!-- <text class="weui-badge" style="margin-left: 5px;"> -->
+                        {{other_message_number}}
+                        <!-- </text> -->
+                    </view>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+            <view class="weui-cell weui-cell_active weui-cell_access" bindtap="find_people">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">查找用户</text>
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+            <!-- <view class="weui-cell weui-cell_active weui-cell_access">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">荣誉墙</text>
+
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+            <view class="weui-cell weui-cell_active weui-cell_access">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">个人自述</text>
+                    
+                </view>
+                <view class="weui-cell__ft">详细信息</view>
+            </view>
+            <view class="weui-cell weui-cell_active weui-cell_access">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">他人评价</text>
+                    
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view>
+            <view class="weui-cell weui-cell_active weui-cell_access">
+                <view class="weui-cell__bd">
+                    <text style="vertical-align: middle;">帮助中心</text>
+                    
+                </view>
+                <view class="weui-cell__ft"></view>
+            </view> -->
+        </view>
+    </view>
+</view>

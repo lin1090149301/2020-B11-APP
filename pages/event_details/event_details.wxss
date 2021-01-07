@@ -1,0 +1,17 @@
+/*!
+ * WeUI v2.3.0 (https://github.com/weui/weui-wxss)
+ * Copyright 2020 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.page {
+  background-color: var(--weui-BG-2);
+}
+image {
+  margin: 4px 0;
+}
+.weui-tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

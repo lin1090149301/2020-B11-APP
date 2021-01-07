@@ -1,0 +1,4 @@
+/* pages/invite_project/invite_project.wxss */
+.weui-panel__hd {
+  background-color: white;
+}

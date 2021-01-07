@@ -1,0 +1,44 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">{{get_data[event_id]['title']}}</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h2">{{get_data[event_id]['text']}}</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" wx:if="{{image_url}}" src="{{image_url}}" mode="aspectFit" style="height: 180px" />
+                        <!-- <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" /> -->
+                    </view>
+                    <view class="weui-article__h3">赛事介绍1</view>
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">赛事介绍2</view>
+                    <view class="weui-article__p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-tab">
+            <view class="weui-tabbar">
+                <view class="weui-tabbar__item" bindtap='individual_team'>
+                    <image src="../../image/me1.png" alt class="weui-tabbar__icon"></image>
+                    <view class="weui-tabbar__label">个人组队</view>
+                </view>
+                <view class="weui-tabbar__item" bindtap='team_recruitment'>
+                    <image src="../../image/team1.png" alt class="weui-tabbar__icon"></image>
+                    <view class="weui-tabbar__label">团队招募</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

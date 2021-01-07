@@ -1,0 +1,14 @@
+<!-- pages/other_message/other_message.wxml -->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">其他消息</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text" wx:for="{{number}}" wx:for-index="i" bindtap='look_other_message_details' id='{{i}}'>
+                    <h4 class="weui-media-box__title">消息</h4>
+                    <view class="weui-media-box__desc">{{message[i]}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,98 @@
+<!-- pages/individual_team/individual_team.wxml -->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="swiper-tab" style="opacity:{{1}}">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+            个人自荐
+        </view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+            新建发布
+        </view>
+    </view>
+    <view class="content"></view>
+    <view class="page__bd" wx:if="{{currentTab==0}}">
+        <view class="weui-form-preview" wx:for="{{number}}" wx:for-index="i">
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item" id="title">
+                    <label class="weui-form-preview__label" style="color: #90c3fa">
+                        {{title[i]}}
+                    </label>
+                    <!-- <text class="weui-form-preview__value"></text> -->
+                </view>
+                <view class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">技能自述：{{first[i]}}</label>
+                    <!-- <text class="weui-form-preview__value"></text> -->
+                </view>
+                <view class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">队伍需求：{{second[i]}}</label>
+                    <!-- <text class="weui-form-preview__value"></text> -->
+                </view>
+                <view class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">学号：{{third[i]}}</label>
+                    <!-- <text class="weui-form-preview__value"></text> -->
+                </view>
+                <view class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">联系方式：{{fourth[i]}}</label>
+                    <!-- <text class="weui-form-preview__value"></text> -->
+                </view>
+            </view>
+        </view>
+        <view class="weui-footer" id="add" style="opacity:{{1}}">
+            <view class="weui-footer__links">
+                <a class="weui-footer__link" bindtap="add">{{add}}</a>
+            </view>
+        </view>
+    </view>
+    <view class="page__bd" wx:if="{{currentTab==1}}">
+        <form bindsubmit="formSubmit">
+            <view class="weui-cells__title">标题</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" value="{{getin1}}" bindinput='getinput1' placeholder="请输入文本" />
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">技能自述:</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" value='{{getin2}}' bindinput='getinput2' placeholder="请输入文本" style="height: 3.3em" />
+                        <!-- <view class="weui-textarea-counter">0/200</view> -->
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">队伍需求:</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" value='{{getin3}}' bindinput='getinput3' placeholder="请输入文本" style="height: 3.3em" />
+                        <!-- <view class="weui-textarea-counter">0/200</view> -->
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">学号:</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" value='{{getin4}}' bindinput='getinput4' placeholder="请输入文本" style="height: 3.3em" />
+                        <!-- <view class="weui-textarea-counter">0/200</view> -->
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">联系方式:</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea" value='{{getin5}}' bindinput='getinput5' placeholder="请输入文本" style="height: 3.3em" />
+                        <!-- <view class="weui-textarea-counter">0/200</view> -->
+                    </view>
+                </view>
+            </view>
+            <view class="weui-form__opr-area">
+                <button class="weui-btn weui-btn_primary" style="margin-top:20px" form-type="submit">
+                    确定
+                </button>
+            </view>
+        </form>
+    </view>
+</view>

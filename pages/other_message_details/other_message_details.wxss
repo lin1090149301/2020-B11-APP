@@ -1,0 +1,4 @@
+/* pages/other_message_details/other_message_details.wxss */
+.page {
+  background-color: white;
+}

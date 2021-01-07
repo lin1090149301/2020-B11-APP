@@ -1,0 +1,7 @@
+/* pages/me/me.wxss */
+.page {
+  background-color: white;
+}
+image {
+  height: 50px;
+}

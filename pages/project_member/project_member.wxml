@@ -1,0 +1,60 @@
+<!-- pages/project_member/project_member.wxml -->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">
+                项目成员
+                <a wx:if="{{delete_or_quit==1}}" bindtap="openAndroid2" class="weui-btn weui-btn_mini weui-btn_default">
+                    退出
+                </a>
+            </view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text" wx:for="{{number}}" wx:for-index="i" id='{{i}}'>
+                    <!-- <h4 class="weui-media-box__title">成员姓名：{{members_name[i]}}</h4> -->
+                    <view class="weui-media-box__desc">成员姓名：{{members_name[i]}}</view>
+                    <view class="weui-media-box__desc">成员学号：{{members_student_number[i]}}</view>
+                    <view class="weui-media-box__desc">成员学校：{{members_school[i]}}</view>
+                    <view class="weui-media-box__desc">成员学院：{{members_college[i]}}</view>
+                    <view class="weui-media-box__desc">成员专业：{{members_major[i]}}</view>
+                    <a wx:if="{{delete_or_quit==0&&i!=0}}" data-index="{{i}}" bindtap="openAndroid1" class="weui-btn weui-btn_mini weui-btn_default">
+                        移除
+                    </a>
+                    <view class="fadeIn" wx:if="{{androidDialog1}}">
+                        <view class="weui-mask"></view>
+                        <view class="weui-dialog weui-skin_android">
+                            <view class="weui-dialog__hd">
+                                <strong class="weui-dialog__title">移除成员</strong>
+                            </view>
+                            <view class="weui-dialog__bd">确定移除该成员吗？</view>
+                            <view class="weui-dialog__ft">
+                                <a class="weui-dialog__btn weui-dialog__btn_default" bindtap="close">
+                                    取消
+                                </a>
+                                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="delete">
+                                    确定
+                                </a>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="fadeIn" wx:if="{{androidDialog2}}">
+                        <view class="weui-mask"></view>
+                        <view class="weui-dialog weui-skin_android">
+                            <view class="weui-dialog__hd">
+                                <strong class="weui-dialog__title">退出项目</strong>
+                            </view>
+                            <view class="weui-dialog__bd">确定退出该项目吗？</view>
+                            <view class="weui-dialog__ft">
+                                <a class="weui-dialog__btn weui-dialog__btn_default" bindtap="close">
+                                    取消
+                                </a>
+                                <a class="weui-dialog__btn weui-dialog__btn_primary" bindtap="quit">
+                                    确定
+                                </a>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

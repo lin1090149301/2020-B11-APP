@@ -1,0 +1,15 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">我创建的项目</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text" wx:for="{{number}}" wx:for-index="i" bindtap='look_members' id='{{i}}'>
+                    <h4 class="weui-media-box__title">项目名称：{{project_name[i]}}</h4>
+                    <view class="weui-media-box__desc">项目id：{{project_id[i]}}</view>
+                    <view class="weui-media-box__desc">创建者：{{leader_name}}</view>
+                    <view class="weui-media-box__desc">人数：{{members_number[i]}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

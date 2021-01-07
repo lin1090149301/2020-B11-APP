@@ -1,0 +1,9 @@
+/* pages/project/project.wxss */
+.page {
+  background-color: white;
+}
+
+.content {
+  height: 20px;
+  /* background-color: #ededed; */
+}

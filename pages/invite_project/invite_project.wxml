@@ -1,0 +1,30 @@
+<!-- pages/invite_project/invite_project.wxml -->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="content"></view>
+    <view class="page__bd">
+        <form bindsubmit="formSubmit">
+            <view class="weui-cells__title">项目id</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" value="{{getin1}}" bindinput='getinput1' placeholder="请输入项目id" />
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">被邀请者学号</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-input" value='{{getin2}}' bindinput='getinput2' placeholder="请输入被邀请者学号" />
+                        <!-- <view class="weui-textarea-counter">0/200</view> -->
+                    </view>
+                </view>
+            </view>
+            <view class="weui-form__opr-area">
+                <button class="weui-btn weui-btn_primary" style="margin-top:20px" form-type="submit">
+                    邀请
+                </button>
+            </view>
+        </form>
+    </view>
+</view>

@@ -1,0 +1,69 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd" style="opacity:{{1}}">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-cells">
+                <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example">
+                    <!-- <view class="weui-cell__hd">
+                        <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt style="width: 20px; height: 20px; margin-right: 16px; display: block;"></image>
+                    </view> -->
+                    <view class="weui-cell__bd weui-cell_primary">
+                        <view>项目</view>
+                    </view>
+                    <!-- <text class="weui-cell__ft"></text> -->
+                </a>
+            </view>
+            <view class="weui-grids">
+                <a class="weui-grid" bindtap="i_creat">
+                    <view class="weui-grid__icon">
+                        <image src="../../image/project1.png" id="img2" alt></image>
+                    </view>
+                    <view class="weui-grid__label">我创建的</view>
+                </a>
+                <a class="weui-grid" bindtap="i_join">
+                    <view class="weui-grid__icon">
+                        <image src="../../image/teammate1.png" id="img2" alt></image>
+                    </view>
+                    <view class="weui-grid__label">我参与的</view>
+                </a>
+                <a class="weui-grid" bindtap="add_project">
+                    <view class="weui-grid__icon">
+                        <image src="../../image/add.png" id="img2" alt></image>
+                    </view>
+                    <view class="weui-grid__label">添加项目</view>
+                </a>
+                <a class="weui-grid" bindtap="invite_project">
+                    <view class="weui-grid__icon">
+                        <image src="../../image/system_comment.png" id="img2" alt></image>
+                    </view>
+                    <view class="weui-grid__label">邀请加入</view>
+                </a>
+            </view>
+            <!-- <view class="content"></view>
+            <view class="weui-cells" style="margin-top:5px">
+                <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example">
+                    <view class="weui-cell__hd">
+                        <image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt style="width: 20px; height: 20px; margin-right: 16px; display: block;"></image>
+                    </view>
+                    <view class="weui-cell__bd weui-cell_primary">
+                        <view>评价</view>
+                    </view>
+                    
+                </a>
+            </view>
+            <view class="weui-grids">
+                <a class="weui-grid">
+                    <view class="weui-grid__icon">
+                        <image src="../../image/teammate_comment.png" id="img2" alt></image>
+                    </view>
+                    <view class="weui-grid__label">组员互评</view>
+                </a>
+                <a class="weui-grid">
+                    <view class="weui-grid__icon">
+                        <image src="../../image/auto.png" id="img2" alt></image>
+                    </view>
+                    <view class="weui-grid__label">系统自评</view>
+                </a>
+            </view> -->
+        </view>
+    </view>
+</view>
