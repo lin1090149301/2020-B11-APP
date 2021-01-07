@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/event_details/event_details",
+    "pages/individual_team/individual_team",
+    "pages/team_recruitment/team_recruitment",
+    "pages/project/project",
+    "pages/add_project/add_project",
+    "pages/invite_project/invite_project",
+    "pages/i_creat/i_creat",
+    "pages/i_join/i_join",
+    "pages/project_member/project_member",
+    "pages/me/me",
+    "pages/set_user_title/set_user_title",
+    "pages/message/message",
+    "pages/message_details/message_details",
+    "pages/other_message/other_message",
+    "pages/other_message_details/other_message_details",
+    "pages/find_people/find_people",
+    "pages/logs/logs"
+  ],
+  "networkTimeout": {
+    "request": 5000
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#90c3fa",
+    "navigationBarTitleText": "组队助手",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "赛事",
+        "iconPath": "/image/team1.png",
+        "selectedIconPath": "/image/team3.png"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "text": "项目",
+        "iconPath": "/image/project1.png",
+        "selectedIconPath": "/image/project3.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "/image/me1.png",
+        "selectedIconPath": "/image/me3.png"
+      }
+    ],
+    "selectedColor": "#90c3fa"
+  }
+}
